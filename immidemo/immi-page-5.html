@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./immi-practice.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/practice-f8/Shoppee-practice/assets/fonts/fontawesome-free-6.1.0-web/css/all.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+<body>
+
+<!-- 1. Slider
+    1.1. Image
+    1.2. Log-in.
+2. Content.
+    3.1. Page number.
+    3.2. Header-infor.
+    3.3. Body-infor.
+    3.4. Footer-btn--nav. -->
+
+            <!-- Add details -->
+        <!-- <div class="details-box">
+            <div class="details-box__header">Add details</div>
+            <ul class="details-box__bar">
+                <li>Family name</li>
+                <li>Given names</li>
+                <li>Passport number</li>
+                <li>Country of passport</li>
+                <li>Actions</li>
+            </ul>
+            <a class="details-box__btn">Add</a>
+        </div> -->
+
+        <!-- Input details -->
+
+        <!-- Fill -->
+        <!-- <div class="form-input grid ">
+            <div class="row">
+                <div class="col l-4 m-4 s-4">
+                    <label for="input-detail" class="form-label">Family name</label>
+                </div>
+                <div class="col l-8">
+                    <input id="input-detail" name="input-detail" type="text" value="fm" class="form-control">
+                    <br><span class="form-message"></span>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Selection -->
+        <!-- <div class="form-input grid">
+            <div class="row">
+                <div class="col l-4 m-4 s-4">
+                    <label for="input-detail" class="form-label">Country</label>
+                </div>
+                <div class="col l-8">
+                    <select id="input-detail" name="input-detail" class="form-control">
+                        <option value=""></option>
+                        <option value="VNZ">VENEZUALA - VNZ</option>
+                        <option value="VNM">VIET NAME - VNM</option>
+                    </select>
+                    <br><span class="form-message"></span>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Yes/no -->
+        <!-- <div class="form-input grid">
+                    <div class="row">
+                        <div class="col l-4 m-4 s-4">
+                            <p class="form-dsc"></p>
+                        </div>
+                        <div class="col l-8">
+                            <div class="form-input__option">
+                                <label style="padding: 0 4px;">
+                                    <input id="input-detail-1" name="prv-ok" type="radio" class="form-control" value="yes">
+                                    Yes
+                                </label>
+                                <label style="padding: 0 4px;">
+                                    <input id="input-detail-1" name="prv-ok" type="radio" class="form-control" value="no">
+                                    No
+                                </label>
+                            </div>
+                            <br><span class="form-message"></span>
+                        </div>
+                    </div>
+                </div>  -->
+
+<div id="main">
+    <div id="slider">
+        <div class="slider-header">
+            <div class="slider-header__name">
+                WILL, SMITH JOHN
+                <a href="" class="slider-header__name-logout">
+                    Logout
+                </a>
+            </div>
+            <h2 class="slider-header__status">
+                Online Lodggement
+            </h2>
+        </div>
+    </div>
+    
+    <!--  Body -->
+    <form action="" method="POST" class="form" id="form-1">
+        <div id="content" class="grid wide">
+            <div class="row no-gutters">
+
+                <!-- Application -->
+                <div class="application col l-9 m-9 s-12">
+                    <h3 class="application-header">
+                        Application for a Work and Holiday visa
+                    </h3>
+                    <div style="font-size:1.4rem; padding: 10px;">Transaction Reference Number (TRN):</div>
+                    <div class="page-number" style="width: 100%; text-align: center; font-size: 1.2rem">5/16</div>
+
+                    <div class="application-body">
+                        <h3 class="head-title">
+                            Additional identity questions
+                        </h3>
+                        <div class="body-title">
+                            Provide further details below, where available.
+                        </div>
+                        <h3 class="head-title">
+                            Previous travel to Australia
+                        </h3>
+                        <div class="body-title">
+                            Has this applicant previously travelled to Australia or previously applied for a visa?
+                        </div> 
+        
+    
+                        <div class="form-input grid">
+                            <div class="row">
+                                <div class="col l-4 m-4 s-4">
+                                    <p class="form-dsc"></p>
+                                </div>
+                                <div class="col l-8">
+                                    <div class="form-input__option">
+                                        <label style="padding: 0 4px;">
+                                            <input id="input-detail-1" name="prv-ok" type="radio" class="form-control" value="yes">
+                                            Yes
+                                        </label>
+                                        <label style="padding: 0 4px;">
+                                            <input id="input-detail-1" name="prv-ok" type="radio" class="form-control" value="no">
+                                            No
+                                        </label>
+                                    </div>
+                                    <br><span class="form-message"></span>
+                                </div>
+                            </div>
+                        </div> 
+        
+                        <div class="page-5 disable">
+                            <h3 class="head-title">
+                                Previous passports
+                            </h3>
+                            <div class="body-title">
+                                Does this applicant have previous passports that have been used to travel to Australia?
+                            </div> 
+        
+                            <div class="form-input grid">
+                                <div class="row">
+                                    <div class="col l-4 m-4 s-4">
+                                        <p class="form-dsc"></p>
+                                    </div>
+                                    <div class="col l-8">
+                                        <div class="form-input__option">
+                                            <label style="padding: 0 4px;">
+                                                <input id="input-detail-2" name="prv-pp" type="radio" class="form-control" value="yes">
+                                                Yes
+                                            </label>
+                                            <label style="padding: 0 4px;">
+                                                <input id="input-detail-2" name="prv-pp" type="radio" class="form-control" value="no">
+                                                No
+                                            </label>
+                                        </div>
+                                        <br><span class="form-message"></span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <form action="" method="POST" class="form" id="form-2">
+                                <div class="page-5-1 disable">
+                                    <div class="details-box">
+                                        <div class="details-box__header">Add details</div>
+                                        <ul class="details-box__bar row">
+                                            <div class="col l-2 m-2 s-2">
+                                                <li>Family name</li>
+                                            </div>
+                                            <div class="col l-2 m-2 s-2">
+                                                <li>Given names</li>
+                                            </div>
+                                            <div class="col l-2 m-2 s-2">
+                                                <li>Passport number</li>
+                                            </div>
+                                            <div class="col l-2 m-2 s-2">
+                                                <li>Country of passport</li>
+                                            </div>
+                                            <div class="col l-2 m-2 s-2">
+                                                <li>Actions</li>
+                                            </div>
+                                        </ul>
+                    
+                                        <ul class="details-box__bar get-infor row" style="background-color: #fff; color: #000; font-weight: 400;">    
+                                        </ul>
+                                        
+                                        <a class="details-box__btn">Add</a>
+                                    </div>
+                                </div>
+                            </form>
+            
+                                
+                                <!--  -->
+                            <h3 class="head-title">
+                                Grant number
+                            </h3>
+                            <div class="body-title">
+                                Does this applicant have an Australia visa grant number?
+                            </div> 
+        
+                            <div class="form-input grid">
+                                <div class="row">
+                                    <div class="col l-4 m-4 s-4">
+                                        <p class="form-dsc"></p>
+                                    </div>
+                                    <div class="col l-8">
+                                        <div class="form-input__option">
+                                            <label style="padding: 0 4px;">
+                                                <input id="input-detail-vg" name="visa-g" type="radio" class="form-control" value="yes">
+                                                Yes
+                                            </label>
+                                            <label style="padding: 0 4px;">
+                                                <input id="input-detail-vg" name="visa-g" type="radio" class="form-control" value="no">
+                                                No
+                                            </label>
+                                        </div>
+                                        <br><span class="form-message"></span>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="visa-grant disable">
+                                <div class="form-input grid ">
+                                    <div class="row">
+                                        <div class="col l-4 m-4 s-4">
+                                            <label for="input-detail" class="form-label">Australian visa grant number (if known)</label>
+                                        </div>
+                                        <div class="col l-8">
+                                            <input id="input-detail" name="visa-n" type="text" class="form-control">
+                                            <br><span class="form-message"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- container btn -->
+                        <div class="application-btn grid">
+                            <div class="row no-gutters sp--between">
+                                <div class="col l-10">
+                                    <div class="btn">
+                                        <button class="btn__name">
+                                            Previous
+                                        </button>
+                                        <button class="btn__name">
+                                            Save
+                                        </button>
+                                        <button class="btn__name">
+                                            Print
+                                        </button>
+                                        <button class="btn__name">
+                                            Go to my account
+                                        </button>          
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="btn">
+                                        <button class="btn__name">
+                                            Next
+                                        </button>
+                                        <a href="./immi-page-9.html" class="a-btn" style="display: none;"></a>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="links col l-3 m-3 s-12">
+                    <div class="row m-l" style="flex-direction: column;">
+                        <!-- Related link -->
+                        <div class="related-link col l-12 m-12 s-12">
+                            <h3 class="related-header">
+                                Related links
+                            </h3>
+                            <div class="links-body">
+                                <a href="">
+                                    Subclass 462 information
+                                </a><br>
+                                <a href="">
+                                    Health details
+                                </a><br>
+                                <a href="">
+                                    Visa Pricing Estimator
+                                </a><br>
+                                <a href="">
+                                    Processing times
+                                </a><br>
+                            </div>
+                        </div>
+                        <!-- Help and support -->
+                        <div class="help-link col l-12 m-12 s-12">
+                            <h3 class="help-header">
+                                Help and Support
+                            </h3>
+                            <div class="links-body">
+                                <a href="">
+                                    Contact us
+                                </a><br>
+                                <a href="">
+                                    Client feedback
+                                </a><br>
+                                <a href="">
+                                    ImmiAccount support
+                                </a><br>
+                                <a href="">
+                                    Client service charter
+                                </a><br>
+                                <a href="">
+                                    Translation services
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </form>
+
+
+
+    <!-- Footer  -->
+    <footer id="footer">
+        <div class="gird wide">
+            <div class="row">
+                <div class="footer-link col l-5">
+                    <a href="">
+                        Accessibility
+                    </a>
+                    <a href="">
+                        Online Security
+                    </a>
+                    <a href="">
+                        Privacy
+                    </a><br>
+                    <a href="">
+                        Copyright & Disclaimer
+                    </a>
+                </div>
+
+                <div class="source col l-7">
+                    <span>
+                        (E-1208 (Internet) 18/11/2016.1)
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+                
+
+        <!-- Modal -->
+    <div class="modal disable">
+
+        <div id="modal-container">
+
+            <div id="slider">
+                <div class="slider-header">
+                    <div class="slider-header__name">
+                        WILL, SMITH JOHN
+                        <a href="" class="slider-header__name-logout">
+                            Logout
+                        </a>
+                    </div>
+                    <h2 class="slider-header__status">
+                        Online Lodggement
+                    </h2>
+                </div>
+            </div>
+            
+            <!--  Body -->
+            <div id="content" class="grid wide">
+                <div class="row no-gutters">
+    
+                    <!-- Application -->
+                    <div class="application col l-9 m-9 s-12">
+                        <h3 class="application-header">
+                            Application for a Work and Holiday visa
+                        </h3>
+                        <div style="font-size:1.4rem; padding: 10px;">Transaction Reference Number (TRN):</div>
+                        <div class="page-number" style="width: 100%; text-align: center; font-size: 1.2rem">5/16</div>
+    
+                        <div class="application-body">
+                            
+                            <!-- Add details -->
+                            <form action="" method="POST" class="form" id="form-2">
+                                    <div class="page-5-2 ">
+                                        <div class="page-infor">
+                                            <div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-4">
+                                                        <label for="family-name" class="form-label">Family name</label>
+                                                    </div>
+                                                    <div class="col l-8">
+                                                        <input id="family-name" name="family-name" type="text" class="form-control input--size-m">
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-4">
+                                                        <label for="given-name" class="form-label">Given name</label>
+                                                    </div>
+                                                    <div class="col l-8">
+                                                        <input id="given-name" name="given-name" type="text" class="form-control input--size-m">
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-4">
+                                                        <p class="form-dsc">Sex</p>
+                                                    </div>
+                                                    <div class="col l-8">
+                                                        <div class="form-input__option">
+                                                            <label style="padding: 0 4px;">
+                                                                <input id="sex" name="sex" type="radio" class="form-control">
+                                                                Female
+                                                            </label>
+                                                            <label style="padding: 0 4px;">
+                                                                <input id="sex" name="sex" type="radio" class="form-control">
+                                                                Male
+                                                            </label>
+                                                            <label style="padding: 0 4px;">
+                                                                <input id="sex" name="sex" type="radio" class="form-control">
+                                                                Other
+                                                            </label>
+                                                        </div>
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-4">
+                                                        <label for="birth" class="form-label">Date of birth</label>
+                                                    </div>
+                                                    <div class="col l-8">
+                                                        <input id="birth" name="birth" type="text" class="form-control input--size-s">
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-4">
+                                                        <label for="passport-number" class="form-label">Passport number</label>
+                                                    </div>
+                                                    <div class="col l-8">
+                                                        <input id="passport-number" name="passport-number" type="text" class="form-control input--size-s">
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-4">
+                                                        <label for="country-passport" class="form-label">Country of passport</label>
+                                                    </div>
+                                                    <div class="col l-8">
+                                                        <select id="country-passport" name="country-passport" class="form-control input--size-m">
+                                                            <option value=""></option>
+                                                            <option value="VNZ">VENEZUALA</option>
+                                                            <option value="VNM">VIET NAM</option>
+                                                        </select>
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-4">
+                                                        <label for="nationality" class="form-label">Nationality of passport holder</label>
+                                                    </div>
+                                                    <div class="col l-8">
+                                                        <select id="nationality" name="nationality" class="form-control input--size-m">
+                                                            <option value=""></option>
+                                                            <option value="VNZ">VENEZUALA</option>
+                                                            <option value="VNM">VIET NAM</option>
+                                                        </select>
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-4">
+                                                        <label for="date-issue" class="form-label">Date of issue</label>
+                                                    </div>
+                                                    <div class="col l-8">
+                                                        <input id="date-issue" name="date-issue" type="text" class="form-control input--size-s">
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div><div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-4">
+                                                        <label for="date-expiry" class="form-label">Date of expiry</label>
+                                                    </div>
+                                                    <div class="col l-8">
+                                                        <input id="date-expiry" name="date-expiry" type="text" class="form-control input--size-s">
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-4">
+                                                        <label for="place-issue" class="form-label">Place of issue / issuing authority</label>
+                                                    </div>
+                                                    <div class="col l-8">
+                                                        <input id="place-issue" name="place-issue" type="text" class="form-control input--size-m">
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid button">
+                                            <div class="row no-gutters sp--between">
+                                                <div class="col l-8 m-8 s-8">
+                                                    <div class="btn">
+                                                        <a class="btn__name">
+                                                            Cancel
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-1 m-1-1 s-1-1 flex--end">
+                                                    <div class="btn">
+                                                        <button class="btn__name">
+                                                            Confirm
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>    
+                            </form>
+
+                           
+                        </div>
+    
+                    </div>
+    
+                    <div class="links col l-3 m-3 s-12">
+                        <div class="row m-l" style="flex-direction: column;">
+                            <!-- Related link -->
+                            <div class="related-link col l-12 m-12 s-12">
+                                <h3 class="related-header">
+                                    Related links
+                                </h3>
+                                <div class="links-body">
+                                    <a href="">
+                                        Subclass 462 information
+                                    </a><br>
+                                    <a href="">
+                                        Health details
+                                    </a><br>
+                                    <a href="">
+                                        Visa Pricing Estimator
+                                    </a><br>
+                                    <a href="">
+                                        Processing times
+                                    </a><br>
+                                </div>
+                            </div>
+                            <!-- Help and support -->
+                            <div class="help-link col l-12 m-12 s-12">
+                                <h3 class="help-header">
+                                    Help and Support
+                                </h3>
+                                <div class="links-body">
+                                    <a href="">
+                                        Contact us
+                                    </a><br>
+                                    <a href="">
+                                        Client feedback
+                                    </a><br>
+                                    <a href="">
+                                        ImmiAccount support
+                                    </a><br>
+                                    <a href="">
+                                        Client service charter
+                                    </a><br>
+                                    <a href="">
+                                        Translation services
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                </div>
+            </div>
+            
+            
+            <!-- Footer  -->
+            <footer id="footer">
+                <div class="gird wide">
+                    <div class="row">
+                        <div class="footer-link col l-5">
+                            <a href="">
+                                Accessibility
+                            </a>
+                            <a href="">
+                                Online Security
+                            </a>
+                            <a href="">
+                                Privacy
+                            </a><br>
+                            <a href="">
+                                Copyright & Disclaimer
+                            </a>
+                        </div>
+
+                        <div class="source col l-7">
+                            <span>
+                                (E-1208 (Internet) 18/11/2016.1)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+
+    <script src="./immi-practice.js"></script>
+
+    <script>
+        // FORM-1
+        validator({
+            form: '#form-1',
+            formMessage: '.form-message',
+            formGroupSelector: '.form-input',
+            rules: [
+            validator.isRequire('#input-detail-1'),
+            validator.isRequire('#input-detail-2'),
+            ],
+            onSubmit: function(value) {
+            console.log(value)
+            }
+        });
+
+        // FORM-2
+        validator({
+            form: '#form-2',
+            formMessage: '.form-message',
+            formGroupSelector: '.form-input',
+            rules: [
+                validator.isRequire('#family-name'),
+                // validator.isRequire('#given-name'),
+                // validator.isRequire('#sex'),
+                // validator.isRequire('#birth'),
+                // validator.isRequire('#passport-number'),
+                // validator.isRequire('#country-passport'),
+                // validator.isRequire('#nationality'),
+                // validator.isRequire('#date-issue'),
+                // validator.isRequire('#date-expiry'),
+                // validator.isRequire('#place-issue'),
+            ],
+            onSubmit: function(data) {
+                const familyInput = document.querySelector('#family-name');
+                const givenNameInput = document.querySelector('#given-name');
+                const passportInput = document.querySelector('#passport-number');
+                const countryInput = document.querySelector('#country-passport');
+        
+                const html = `
+                    <div class="col l-2 m-2 s-2">
+                        <li>${familyInput.value}</li>
+                    </div>
+                    <div class="col l-2 m-2 s-2">
+                        <li>${givenNameInput.value}</li>
+                    </div>
+                    <div class="col l-2 m-2 s-2">
+                        <li>${passportInput.value}</li>
+                    </div>
+                    <div class="col l-2 m-2 s-2">
+                        <li>${countryInput.options[countryInput.selectedIndex].text}</li>
+                    </div>
+                    <div class="col l-2 m-2 s-2">
+                        <ul>
+                            <li>Edit</li>
+                            <li>Delete</li>
+                        </ul>
+                    </div>
+                        `
+
+                const modal = document.querySelector('.modal');                 
+                const getInfor = document.querySelector('.details-box__bar.get-infor');
+                getInfor.innerHTML = html;
+                modal.classList.add('disable');
+            },
+            changeSave: function(save) {
+                var confirmBtn = document.querySelector('.page-5-2 .col:last-child button');
+                confirmBtn.innerText = 'Save';
+            }
+        })
+
+    </script>
+</div>
+</body>
+</html>
