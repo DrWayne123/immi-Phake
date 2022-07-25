@@ -11,6 +11,8 @@ function validator(options) {
     var addBtn = $('.the-btn');
     var cancelBtn = $('.page-5-2 .col:first-child a');
     var modal = $('.modal');
+    var subPseudos = $$('.sub-pseudo');
+
     
 
     // Xử lý show hidden infor
@@ -80,12 +82,6 @@ function validator(options) {
     if (formEl) {
 
     
-        // if(moveOn2.matches(':checked')) {
-        //     function abc() {
-        //         return 'abc'
-        //     }
-        //     console.log(abc())
-        // }
 
         formEl.onsubmit = function(e) {
             // Xử lý chặn sự kiện kết nối với trang web khác của form.
@@ -162,6 +158,53 @@ function validator(options) {
                             showHiddenInforCheckbox(infor, input)
                         }
                         break;
+                }
+            }
+        })
+
+        function showDocements(infor, iconMinus, iconPlus) {
+            infor.classList.toggle('disable')
+            iconMinus.classList.toggle('fa-minus');
+            iconPlus.classList.toggle('fa-plus');
+        }
+
+        Array.from(subPseudos).forEach(function(subPseudo) {
+            subPseudo.onclick = (e) => {
+                if(e.target.matches(options.hidden1)) {
+                    const infor = $(options.hidden11);
+                    const iconMinus = $(options.hidden111);
+                    const iconPlus = $(options.hidden1111);
+                    showDocements(infor, iconMinus, iconPlus)
+                }
+                if(e.target.matches(options.hidden2)) {
+                    const infor = $(options.hidden21);
+                    const iconMinus = $(options.hidden211);
+                    const iconPlus = $(options.hidden2111);
+                    showDocements(infor, iconMinus, iconPlus)
+                }
+                if(e.target.matches(options.hidden3)) {
+                    const infor = $(options.hidden31);
+                    const iconMinus = $(options.hidden311);
+                    const iconPlus = $(options.hidden3111);
+                    showDocements(infor, iconMinus, iconPlus)
+                }
+                if(e.target.matches(options.hidden4)) {
+                    const infor = $(options.hidden41);
+                    const iconMinus = $(options.hidden411);
+                    const iconPlus = $(options.hidden4111);
+                    showDocements(infor, iconMinus, iconPlus)
+                }
+                if(e.target.matches(options.hidden5)) {
+                    const infor = $(options.hidden51);
+                    const iconMinus = $(options.hidden511);
+                    const iconPlus = $(options.hidden5111);
+                    showDocements(infor, iconMinus, iconPlus)
+                }
+                if(e.target.matches(options.hidden6)) {
+                    const infor = $(options.hidden61);
+                    const iconMinus = $(options.hidden611);
+                    const iconPlus = $(options.hidden6111);
+                    showDocements(infor, iconMinus, iconPlus)
                 }
             }
         })
